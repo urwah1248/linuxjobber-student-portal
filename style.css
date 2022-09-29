@@ -1,0 +1,192 @@
+@import url('http://fonts.cdnfonts.com/css/helvetica-neue-9%27');
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 0 50px 50px 50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+header{
+    background: #333333;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+nav{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    color: white;
+    margin: 0 auto;
+}
+nav.mobile{
+    display: none;
+}
+nav.desktop{
+    display: flex;
+}
+
+.page-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 155.02%;
+}
+
+.studentinfo{
+    margin: 10px;
+    margin-top: 145px;
+    width: 25%;
+}
+.profilepicture{
+    text-align: center;
+}
+.profilepicture img{
+    margin: 0 auto;
+    width: 227px;
+    height: 248px;
+    border-radius: 35px;
+    object-fit: cover;
+}
+.studentinfo .buttons{
+    width: 90%;
+    margin: 0 auto;
+}
+.studentinfo .button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.studentinfo .button .icon{
+    height: 18px;
+    width: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #F1F3FD;
+    border-radius: 17px;
+}
+
+.logout{
+    margin-top: 10px;
+    color: #ACB7EB;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.studentform{
+    width: 40%;
+    padding: 40px;
+    margin-top: 145px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 29px #F0F3FF;
+    border-radius: 35px;
+}
+.studentform form{
+    margin: 30px;
+}
+.studentform form{
+    margin: 30px;
+    size: 20px;
+    line-height: 31px;
+}
+input[type='radio']{
+    display: none;
+}
+input[type='radio']:active .radio{
+    background-color: black;
+}
+input[type=text]{
+    width: 100%;
+    height: 53px;
+    background: #F1F3FD;
+    border-radius: 17px;
+    border: none;
+    text-indent: 15px;
+}
+input[type=text]:focus{ 
+    
+}
+
+.radiobuttons{
+    display: flex;
+    gap: 23px;
+    margin-left: 20px;
+}
+.radio{
+    text-align: center;
+    align-items: center;
+    height: 53px;
+    width: 88px;
+    padding: 10px;
+    background-color: #F1F3FD;
+    border: none;
+    border-radius: 17px;
+    line-height: normal;
+    color: #002851;
+    size: 17px;
+}
+.radio:hover{
+    border: solid #002851 3px;
+    font-weight: 700;
+}
+ol {
+    list-style: none;
+    counter-reset: item;
+  }
+li {
+    size: 20px;
+    counter-increment: item;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 30px;
+}
+li:before {
+    margin-right: 10px;
+    content: counter(item);
+    color: #CC4174;
+}
+
+.radioinput{
+    display: grid;
+    grid-template-columns: 40% 55%;
+    width: 100%;
+    gap: 5%;
+}
+.identifieryes{
+    color: #CC4174;
+    flex-wrap: nowrap;
+    display: none;
+}
+.identifierno{
+    color: #ACB7EB;
+    text-overflow: clip;
+}
+.haveyou{
+    margin-left: 70px;
+}
+.hidden{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    nav.desktop{
+        display: none;
+    }
+    nav.mobile{
+        display: flex;
+    }
+    .studentinfo, .studentform{
+        width: 90%;
+    }
+  }
