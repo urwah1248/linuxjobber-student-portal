@@ -39,7 +39,11 @@
         <div class="studentinfo">
             <div class="profilepicture">
                 <img id='profilepicture' src="src/images/profilepic.jpg" alt="Your Profile Picture">
+                <div id="cameraicon">
+                    <img id="circleicon" src="src/images/circleicon.png"><img id="cameraiconpng" src="src/images/cameraicon.png" alt="">
+                </div>
                 <span style="font-weight: 700;display: block;font-size: 30px; margin: 20px auto;">Muhammad Urwah</span>
+                
             </div>
 
             <div class="buttons">
@@ -83,59 +87,30 @@
         </div>
 
         <div class="studentform">
+            <div class="cornericon">
+                <img id="cornericon" src="src/images/cornericon.png" alt="tick">
+            </div>
             <form>
                 <ol>
                     <label for="course"><li>Course of Study in school:</li></label>
                     <input type="text" name="course" id="course" placeholder="Course of Study" required>
-                    <label for="areustudent"><li>Are you A Student?<span class="identifieryes hidden q1yes"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 6.84617L5.92308 11.7693L14.1282 1.9231" stroke="#CC4174" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Yes</span><span class="identifierno hidden"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.27052 6.50002L12.333 1.43752C12.4468 1.30467 12.5062 1.13378 12.4995 0.959009C12.4927 0.784234 12.4203 0.618443 12.2966 0.494767C12.1729 0.37109 12.0071 0.298636 11.8324 0.291886C11.6576 0.285135 11.4867 0.344584 11.3539 0.458352L6.29135 5.52085L1.22885 0.451408C1.096 0.337639 0.925116 0.278191 0.750341 0.284942C0.575566 0.291693 0.409775 0.364145 0.286098 0.487822C0.162421 0.611499 0.0899678 0.77729 0.0832169 0.952065C0.0764661 1.12684 0.135915 1.29773 0.249683 1.43057L5.31218 6.50002L0.242739 11.5625C0.170043 11.6248 0.111001 11.7014 0.0693185 11.7875C0.0276356 11.8737 0.00421158 11.9675 0.000517486 12.0632C-0.00317661 12.1588 0.0129386 12.2542 0.0478515 12.3433C0.0827644 12.4324 0.135722 12.5133 0.203398 12.581C0.271075 12.6487 0.352011 12.7017 0.441126 12.7366C0.53024 12.7715 0.62561 12.7876 0.721248 12.7839C0.816887 12.7802 0.910729 12.7568 0.996885 12.7151C1.08304 12.6734 1.15965 12.6144 1.22191 12.5417L6.29135 7.47919L11.3539 12.5417C11.4867 12.6555 11.6576 12.7149 11.8324 12.7082C12.0071 12.7014 12.1729 12.6289 12.2966 12.5053C12.4203 12.3816 12.4927 12.2158 12.4995 12.041C12.5062 11.8663 12.4468 11.6954 12.333 11.5625L7.27052 6.50002Z" fill="#ACB7EB"/>
-                            </svg>
-                            No</span></li>
-                    <div class="radioinput hidden q1yes">
-                        <input type="text" name="courseofstudy" id="courseofstudy" placeholder="Course of Study">
-                        <input type="text" name="expgraduation" id="expgraduation" placeholder="Expected Graduation Date">
-                    </div>
+                    <label for="areustudent"><li>Are you A Student?</li>
                     <div id="q1" class="radiobuttons">
                         <button class="radio" id="q1yes">Yes</button>
                         <button class="radio" id="q1no">No</button>
                     </div>
-                    <label for="areustudent"><li>Did you Graduate?<span class="identifieryes"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 6.84617L5.92308 11.7693L14.1282 1.9231" stroke="#CC4174" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Yes</span><span class="identifierno"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.27052 6.50002L12.333 1.43752C12.4468 1.30467 12.5062 1.13378 12.4995 0.959009C12.4927 0.784234 12.4203 0.618443 12.2966 0.494767C12.1729 0.37109 12.0071 0.298636 11.8324 0.291886C11.6576 0.285135 11.4867 0.344584 11.3539 0.458352L6.29135 5.52085L1.22885 0.451408C1.096 0.337639 0.925116 0.278191 0.750341 0.284942C0.575566 0.291693 0.409775 0.364145 0.286098 0.487822C0.162421 0.611499 0.0899678 0.77729 0.0832169 0.952065C0.0764661 1.12684 0.135915 1.29773 0.249683 1.43057L5.31218 6.50002L0.242739 11.5625C0.170043 11.6248 0.111001 11.7014 0.0693185 11.7875C0.0276356 11.8737 0.00421158 11.9675 0.000517486 12.0632C-0.00317661 12.1588 0.0129386 12.2542 0.0478515 12.3433C0.0827644 12.4324 0.135722 12.5133 0.203398 12.581C0.271075 12.6487 0.352011 12.7017 0.441126 12.7366C0.53024 12.7715 0.62561 12.7876 0.721248 12.7839C0.816887 12.7802 0.910729 12.7568 0.996885 12.7151C1.08304 12.6734 1.15965 12.6144 1.22191 12.5417L6.29135 7.47919L11.3539 12.5417C11.4867 12.6555 11.6576 12.7149 11.8324 12.7082C12.0071 12.7014 12.1729 12.6289 12.2966 12.5053C12.4203 12.3816 12.4927 12.2158 12.4995 12.041C12.5062 11.8663 12.4468 11.6954 12.333 11.5625L7.27052 6.50002Z" fill="#ACB7EB"/>
-                            </svg>
-                            No</span></li>
-                <div class="radioinput">
-                        <input type="text" name="currentjob" id="currentjob" placeholder="Current Occupation">
-                    </div>
-                    <div id="q2" class="radiobuttons hidden">
+                    <label for="areustudent"><li>Did you Graduate?</li>
+                    <div id="q2" class="radiobuttons">
                         <button class="radio" id="q2yes">Yes</button>
                         <button class="radio" id="q2no">No</button>
                     </div>
-                    <label for="areustudent"><li>Does your Country require post-graduation service?<span class="identifieryes"><svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 6.84617L5.92308 11.7693L14.1282 1.9231" stroke="#CC4174" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Yes</span><span class="identifierno"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.27052 6.50002L12.333 1.43752C12.4468 1.30467 12.5062 1.13378 12.4995 0.959009C12.4927 0.784234 12.4203 0.618443 12.2966 0.494767C12.1729 0.37109 12.0071 0.298636 11.8324 0.291886C11.6576 0.285135 11.4867 0.344584 11.3539 0.458352L6.29135 5.52085L1.22885 0.451408C1.096 0.337639 0.925116 0.278191 0.750341 0.284942C0.575566 0.291693 0.409775 0.364145 0.286098 0.487822C0.162421 0.611499 0.0899678 0.77729 0.0832169 0.952065C0.0764661 1.12684 0.135915 1.29773 0.249683 1.43057L5.31218 6.50002L0.242739 11.5625C0.170043 11.6248 0.111001 11.7014 0.0693185 11.7875C0.0276356 11.8737 0.00421158 11.9675 0.000517486 12.0632C-0.00317661 12.1588 0.0129386 12.2542 0.0478515 12.3433C0.0827644 12.4324 0.135722 12.5133 0.203398 12.581C0.271075 12.6487 0.352011 12.7017 0.441126 12.7366C0.53024 12.7715 0.62561 12.7876 0.721248 12.7839C0.816887 12.7802 0.910729 12.7568 0.996885 12.7151C1.08304 12.6734 1.15965 12.6144 1.22191 12.5417L6.29135 7.47919L11.3539 12.5417C11.4867 12.6555 11.6576 12.7149 11.8324 12.7082C12.0071 12.7014 12.1729 12.6289 12.2966 12.5053C12.4203 12.3816 12.4927 12.2158 12.4995 12.041C12.5062 11.8663 12.4468 11.6954 12.333 11.5625L7.27052 6.50002Z" fill="#ACB7EB"/>
-                            </svg>
-                            No</span></li>
-                    <div class="haveyou">
-                        <span id="haveyou">Have you completed?</span>
-                        <div id="q4" class="radiobuttons" style="margin: 10px -3px;">
-                            <button class="radio" id="q4yes">Yes</button>
-                            <button class="radio" id="q4no">No</button>
-                        </div>
-                    </div>
-                    <div id="q3" class="radiobuttons hidden">
+                    <label for="areustudent"><li>Does your Country require post-graduation service?</li>
+                    
+                    <div id="q3" class="radiobuttons">
                         <button class="radio" id="q3yes">Yes</button>
                         <button class="radio" id="q3no">No</button>
                     </div>
                 </ol>
-                    <input type="submit" value="Next Step >">
             </form>
         </div>
     </main>

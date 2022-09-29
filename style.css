@@ -56,6 +56,26 @@ nav.desktop{
     border-radius: 35px;
     object-fit: cover;
 }
+#cameraicon #circleicon{
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+#cameraiconpng{
+    position: relative;
+    object-fit: contain;
+    width: 20px;
+    height: 20px;
+    bottom: 31px;
+    border-radius: 0;
+}
+#cameraicon {
+    align-items: center;
+    width: 32px;
+    position: relative;
+    margin: 0 auto;
+    bottom: 20px    ;
+}
 .studentinfo .buttons{
     width: 90%;
     margin: 0 auto;
@@ -90,6 +110,11 @@ nav.desktop{
     background: #FFFFFF;
     box-shadow: 0px 4px 29px #F0F3FF;
     border-radius: 35px;
+}
+#cornericon{
+    position: relative;
+    top: 5%;
+    left: 95%;
 }
 .studentform form{
     margin: 30px;
